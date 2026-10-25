@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tteoknan | 我的第一个网页</title>
+  <style>
+    /* ==== 全局样式 ==== */
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent2: #a78bfa;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: radial-gradient(circle at 20% 10%, #1e293b 0%, var(--bg) 55%);
+      color: var(--text);
+      font-family: system-ui, "Microsoft YaHei", "PingFang SC", sans-serif;
+      line-height: 1.7;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 640px;
+      padding: 48px 40px;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 20px;
+      background: rgba(30, 41, 59, 0.75);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 24px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #0f172a;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 34px;
+      letter-spacing: -0.5px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      margin: 8px 0 32px;
+      color: var(--muted);
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(56, 189, 248, 0.5);
+    }
+    a:hover { border-bottom-style: solid; }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(148, 163, 184, 0.15);
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* 手机屏幕适配 */
+    @media (max-width: 480px) {
+      .card { padding: 32px 24px; }
+      h1 { font-size: 27px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar">T</div>
+
+    <h1>你好，我是 tteoknan</h1>
+    <p class="subtitle">这是我的第一个 GitHub Pages 网站 —— 从仓库到网址，只用了三步。</p>
+
+    <h2>关于我</h2>
+    <ul>
+      <li>GitHub 新手，昨天刚建了第一个仓库</li>
+      <li>正在学习 Git 与前端基础</li>
+      <li>喜欢把学到的东西做成看得见的结果</li>
+    </ul>
+
+    <h2>这个网站是怎么来的</h2>
+    <ul>
+      <li>写一个 <code>index.html</code></li>
+      <li><code>git add</code> → <code>git commit</code> → <code>git push</code></li>
+      <li>在仓库 Settings → Pages 里开启托管</li>
+    </ul>
+
+    <h2>找到我</h2>
+    <ul>
+      <li>GitHub：<a href="https://github.com/tteoknan" target="_blank" rel="noopener">@tteoknan</a></li>
+      <li>本项目仓库：<a href="https://github.com/tteoknan/hello-github" target="_blank" rel="noopener">hello-github</a></li>
+    </ul>
+
+    <footer>用 GitHub Pages 托管 · 2026-10-25</footer>
+  </main>
+</body>
+</html>
